@@ -16,6 +16,7 @@ https://github.com/whydna/ReverseAVAsset
 ![](https://raw.githubusercontent.com/KayWong/VideoReverse/master/D0AAB2A9A3AD9E24FA0107E6C3AF38EE.png)
 
 图解：
+
 1. 把一个视频拆分成多个AVAssetTrack，这样做的原因是因为，使用AVAssetReader读取每一帧SampleBuffer的数据是需要把数据加载到内存里面去的，如果直接把整个视频的SampleBuffer加载到内存，会造成闪退
 
 2. 拆分成多个AVAssetTrack之后，使用AVAssetReader**从最后一个AVAssetTrack**读取SampleBuffer，这样我们可以从后往前获取视频的帧数据
