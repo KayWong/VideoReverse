@@ -13,7 +13,7 @@ https://github.com/whydna/ReverseAVAsset
 视频文件如果除去哪些杂七杂八的元数据，那剩下的就是一帧帧的视频图片了（视频帧的分类这里不展开讨论），简单的来讲，就是把视频文件里的每一帧按照相反的方向去排列就可以让视频倒着播放了。
 
 大体的实现思路如下：
-
+![1](https://raw.githubusercontent.com/KayWong/VideoReverse/master/D0AAB2A9A3AD9E24FA0107E6C3AF38EE.png)
 
 图解：
 1. 把一个视频拆分成多个AVAssetTrack，这样做的原因是因为，使用AVAssetReader读取每一帧SampleBuffer的数据是需要把数据加载到内存里面去的，如果直接把整个视频的SampleBuffer加载到内存，会造成闪退
