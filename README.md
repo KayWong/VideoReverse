@@ -14,7 +14,7 @@ https://github.com/whydna/ReverseAVAsset
 
 大体的实现思路如下：
 
-![空白.png](resources/D0AAB2A9A3AD9E24FA0107E6C3AF38EE.png)
+file:///Applications/Quiver.app/Contents/Resources/html-build/quiver-image-url/D0AAB2A9A3AD9E24FA0107E6C3AF38EE.png
 
 图解：
 1. 把一个视频拆分成多个AVAssetTrack，这样做的原因是因为，使用AVAssetReader读取每一帧SampleBuffer的数据是需要把数据加载到内存里面去的，如果直接把整个视频的SampleBuffer加载到内存，会造成闪退
