@@ -15,6 +15,10 @@
 		37B9981A1C287CE200710151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B998181C287CE200710151 /* LaunchScreen.storyboard */; };
 		37B998251C287CE200710151 /* VideoReverseDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B998241C287CE200710151 /* VideoReverseDemoTests.m */; };
 		37B998301C287CE200710151 /* VideoReverseDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B9982F1C287CE200710151 /* VideoReverseDemoUITests.m */; };
+		37B9983F1C287D0300710151 /* HKMediaOperationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B9983E1C287D0300710151 /* HKMediaOperationTools.m */; };
+		37B998411C28851200710151 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B998401C28851200710151 /* AVFoundation.framework */; };
+		37B998431C28881800710151 /* test.mp4 in Sources */ = {isa = PBXBuildFile; fileRef = 37B998421C2885C500710151 /* test.mp4 */; };
+		37B998441C28887600710151 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 37B998421C2885C500710151 /* test.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		37B9982B1C287CE200710151 /* VideoReverseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoReverseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B9982F1C287CE200710151 /* VideoReverseDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoReverseDemoUITests.m; sourceTree = "<group>"; };
 		37B998311C287CE200710151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B9983D1C287D0300710151 /* HKMediaOperationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKMediaOperationTools.h; sourceTree = "<group>"; };
+		37B9983E1C287D0300710151 /* HKMediaOperationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKMediaOperationTools.m; sourceTree = "<group>"; };
+		37B998401C28851200710151 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		37B998421C2885C500710151 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B998411C28851200710151 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 		37B997FE1C287CE200710151 = {
 			isa = PBXGroup;
 			children = (
+				37B998401C28851200710151 /* AVFoundation.framework */,
 				37B998091C287CE200710151 /* VideoReverseDemo */,
 				37B998231C287CE200710151 /* VideoReverseDemoTests */,
 				37B9982E1C287CE200710151 /* VideoReverseDemoUITests */,
@@ -101,10 +111,13 @@
 		37B998091C287CE200710151 /* VideoReverseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				37B9983D1C287D0300710151 /* HKMediaOperationTools.h */,
+				37B9983E1C287D0300710151 /* HKMediaOperationTools.m */,
 				37B9980D1C287CE200710151 /* AppDelegate.h */,
 				37B9980E1C287CE200710151 /* AppDelegate.m */,
 				37B998101C287CE200710151 /* ViewController.h */,
 				37B998111C287CE200710151 /* ViewController.m */,
+				37B998421C2885C500710151 /* test.mp4 */,
 				37B998131C287CE200710151 /* Main.storyboard */,
 				37B998161C287CE200710151 /* Assets.xcassets */,
 				37B998181C287CE200710151 /* LaunchScreen.storyboard */,
@@ -243,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B998441C28887600710151 /* test.mp4 in Resources */,
 				37B9981A1C287CE200710151 /* LaunchScreen.storyboard in Resources */,
 				37B998171C287CE200710151 /* Assets.xcassets in Resources */,
 				37B998151C287CE200710151 /* Main.storyboard in Resources */,
@@ -270,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B998431C28881800710151 /* test.mp4 in Sources */,
 				37B998121C287CE200710151 /* ViewController.m in Sources */,
 				37B9980F1C287CE200710151 /* AppDelegate.m in Sources */,
 				37B9980C1C287CE200710151 /* main.m in Sources */,
+				37B9983F1C287D0300710151 /* HKMediaOperationTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
