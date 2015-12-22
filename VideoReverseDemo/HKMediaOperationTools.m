@@ -83,9 +83,8 @@
     CGFloat width = videoTrack.naturalSize.width;
     CGFloat height = videoTrack.naturalSize.height;
     if (videoComposition) {
-        CGFloat tmp = width;
-        width = height;
-        height = tmp;
+        width = videoComposition.renderSize.width;
+        width = videoComposition.renderSize.height;
     }
     NSDictionary *writerOutputSettings = [NSDictionary dictionaryWithObjectsAndKeys:
                                           AVVideoCodecH264, AVVideoCodecKey,
